@@ -29,7 +29,7 @@
                         class="text-decoration-underline"
                         to = "view-meetups/1"
                        >
-                        Details
+                        Detailse
                       </v-btn>
               </v-col>
             </v-row>
