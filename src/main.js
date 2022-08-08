@@ -10,6 +10,7 @@ import myMeet from './components/myMeet.vue';
 import vuetify from './plugins/vuetify'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import VueRouter from 'vue-router';
+import {store} from './store'
 // import myFirstPlugin from './myFirstPlugin';
 // import myFirstPlugin from './myFirstPlugin';
 
@@ -23,6 +24,11 @@ const route = [
     component: homePage,
   },
   {
+    path: '/view-meetups/:id',
+    component: myMeet,
+    props: true,
+  },
+  {
     path: '/view-meetups',
     component: ViewMeetup,
   },
@@ -33,10 +39,6 @@ const route = [
   {
     path: '/organize-meet',
     component: organizeMeet,
-  },
-  {
-    path: '/view-meetups/:id',
-    component: myMeet
   },
   {
     path: '/sign-in',
@@ -53,5 +55,6 @@ const router = new VueRouter({routes: route});
 new Vue({
   router,
   vuetify,
+  store,
   render: h => h(App)
 }).$mount('#app')
