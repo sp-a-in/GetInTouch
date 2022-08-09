@@ -9,7 +9,7 @@
                     <v-img  :src="selectedMeet.url"
                     height="500px">
                     </v-img>
-                    <v-card-subtitle class="primary--text"><h3>{{selectedMeet.date}} - {{selectedMeet.location}}</h3></v-card-subtitle>
+                    <v-card-subtitle class="primary--text"><h3>{{selectedMeet.date | date}} - {{selectedMeet.location}}</h3></v-card-subtitle>
                     <v-card-text><h4>{{selectedMeet.description}}</h4></v-card-text>
                     <v-card-actions>
                         <v-spacer></v-spacer>

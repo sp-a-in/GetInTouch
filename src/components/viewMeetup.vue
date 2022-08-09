@@ -20,7 +20,7 @@
                 <v-card-title class="text-h5">
                   <div>
                     <h5>{{item.title}}</h5>
-                    <div>{{item.date}}</div>
+                    <div>{{item.date | date}}</div>
                   </div>
                 </v-card-title>
                       <v-btn
